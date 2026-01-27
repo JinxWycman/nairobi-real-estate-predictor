@@ -1,0 +1,14 @@
+﻿[phases.setup]
+cmds = ["echo 'This is a Python app, NOT Node.js'"]
+
+[phases.install]
+cmds = [
+    "python -m pip install --upgrade pip",
+    "pip install -r requirements.txt"
+]
+
+[phases.build]
+cmds = ["echo 'Building Python application...'"]
+
+[start]
+run = "streamlit run app/streamlit_app.py --server.port= --server.address=0.0.0.0"

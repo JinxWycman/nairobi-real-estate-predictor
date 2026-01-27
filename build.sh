@@ -1,17 +1,16 @@
 ﻿#!/bin/bash
-echo "=========================================="
-echo "Starting Python/Streamlit build..."
-echo "This is NOT a Node.js application"
-echo "=========================================="
+echo "=================================================="
+echo "FORCING PYTHON BUILD - THIS IS NOT A NODE.JS APP"
+echo "=================================================="
 
-# Show Python version
+# Explicitly use Python
+export PYTHON_VERSION=3.9.18
 python --version
-pip --version
 
-# Install Python dependencies
+# Install only Python packages
 pip install --upgrade pip
 pip install -r requirements.txt
 
-echo "=========================================="
-echo "Build complete! Starting Streamlit app..."
-echo "=========================================="
+echo "=================================================="
+echo "BUILD COMPLETE - Python app ready!"
+echo "=================================================="
