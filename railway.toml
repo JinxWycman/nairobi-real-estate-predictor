@@ -1,0 +1,7 @@
+﻿[build]
+builder = "nixpacks"
+buildCommand = "chmod +x setup.sh && ./setup.sh"
+
+[deploy]
+startCommand = "./start.sh"
+restartPolicyType = "never"

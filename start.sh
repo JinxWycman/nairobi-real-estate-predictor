@@ -1,5 +1,9 @@
 ﻿#!/bin/bash
 echo "Starting Nairobi Real Estate Predictor..."
-echo "PORT: "
-echo "Python version: Python 3.14.0"
+
+# Set default port if PORT is not set
+PORT=
+echo "Using PORT: "
+
+# Run Streamlit with the port
 streamlit run app/streamlit_app.py --server.port= --server.address=0.0.0.0
