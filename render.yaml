@@ -2,12 +2,12 @@
   - type: web
     name: nairobi-real-estate
     env: python
+    runtime: python
     buildCommand: |
+      echo "Starting Python build..."
       pip install --upgrade pip
       pip install -r requirements.txt
     startCommand: streamlit run app/streamlit_app.py --server.port= --server.address=0.0.0.0
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.9.18
+    pythonVersion: "3.9.18"
     plan: free
     autoDeploy: true
