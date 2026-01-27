@@ -1,1 +1,1 @@
-web: streamlit run app/streamlit_app.py --server.port= --server.address=0.0.0.0
+web: PORT=${PORT:-8501} streamlit run app/streamlit_app.py --server.port=${PORT:-8501} --server.address=0.0.0.0
