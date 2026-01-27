@@ -1,0 +1,16 @@
+{
+  "model_performance": {
+    "r2": 0.9932080113062409,
+    "rmse": 1016544.4238164586,
+    "mae": 656590.0310015291
+  },
+  "market_analysis": {
+    "overpriced_pct": 0.3,
+    "underpriced_pct": 0.4,
+    "avg_prediction_error": 0.33354463948925256
+  },
+  "financial_impact": {
+    "potential_savings_millions": 17.59279366113541,
+    "potential_gains_millions": 14.946275166255878
+  }
+}
