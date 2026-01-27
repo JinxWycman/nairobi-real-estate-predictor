@@ -1,7 +1,10 @@
 ﻿[build]
 builder = "nixpacks"
-buildCommand = "chmod +x setup.sh && ./setup.sh"
 
 [deploy]
-startCommand = "./start.sh"
-restartPolicyType = "never"
+startCommand = "python launch.py"
+healthcheckPath = "/"
+healthcheckTimeout = 60
+
+[variables]
+PORT = "8501"
