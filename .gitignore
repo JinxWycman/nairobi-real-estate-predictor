@@ -43,3 +43,6 @@ venv.bak/
 *.swp
 *.swo
 *~
+
+# Virtual environment
+venv
